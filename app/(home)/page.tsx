@@ -4,13 +4,13 @@ import { AppIcon } from "../_components/AppIcon/AppIcon";
 
 export default function Home() {
     return (
-        <div className="flex flex-col w-full h-screen justify-center items-center">
+        <div className="flex flex-col w-full h-screen justify-center items-center bg-florest-1">
 
             <ClockDate />
 
             <div className="flex flex-col w-[500px] gap-1">
-                <p className="text-gray-300 text-sm">Live apps</p>
-                <div className="flex gap-7">
+                <p className="text-gray-200 text-sm mb-2">Live apps</p>
+                <div className="flex gap-7 mb-20">
                     <AppIcon
                         appName="regenerationCredit"
                     />
@@ -20,35 +20,20 @@ export default function Home() {
                     />
                 </div>
 
-                <p className="text-gray-300 text-sm mt-12">Future apps</p>
+                <p className="text-gray-200 text-sm mb-2">Future apps</p>
                 <div className="flex gap-5">
-                    <Link
-                        href='https://google.com.br'
-                        target="_blank"
-                        className="w-[80px] h-[80px] bg-blue-500"
-                    >
-                    </Link>
-
-                    <Link
-                        href='https://google.com.br'
-                        target="_blank"
-                        className="w-[80px] h-[80px] bg-blue-500"
-                    >
-                    </Link>
-
-                    <Link
-                        href='https://google.com.br'
-                        target="_blank"
-                        className="w-[80px] h-[80px] bg-blue-500"
-                    >
-                    </Link>
-
-                    <Link
-                        href='https://google.com.br'
-                        target="_blank"
-                        className="w-[80px] h-[80px] bg-blue-500"
-                    >
-                    </Link>
+                    <AppIcon
+                        appName="sintropChain"
+                    />
+                    <AppIcon
+                        appName="regenerationCreditV7"
+                    />
+                    <AppIcon
+                        appName="sintropPayMainnet"
+                    />
+                    <AppIcon
+                        appName="sintropStore"
+                    />
                 </div>
             </div>
         </div>

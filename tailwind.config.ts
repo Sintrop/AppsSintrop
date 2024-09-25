@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      backgroundImage:{
+        "florest-1": "url('../app/assets/img/bg-1.png')"
+      }
     },
   },
   plugins: [],

@@ -13,12 +13,12 @@ export function ClockDate(){
     setInterval(setDateNow, 1000)
 
     return(
-        <div className="flex flex-col items-center mb-10 gap-1">
-            <p className="font-bold text-black text-7xl">
+        <div className="flex flex-col items-center mb-20 gap-1">
+            <p className="font-bold text-white text-7xl">
                 {format(date, 'kk:mm:ss')}
             </p>
 
-            <p className="font-bold text-black text-xl">
+            <p className="font-bold text-white text-xl">
                 {format(date, "PPPP", {locale: ptBR})}
             </p>
         </div>
