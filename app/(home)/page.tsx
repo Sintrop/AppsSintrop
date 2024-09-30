@@ -1,5 +1,3 @@
-import Link from "next/link";
-import { ClockDate } from "./components/ClockDate";
 import { AppIcon } from "../_components/AppIcon/AppIcon";
 
 export default function Home() {
