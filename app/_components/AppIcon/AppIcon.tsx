@@ -15,7 +15,7 @@ export function AppIcon({ appName }: Props) {
     return (
         <Link
             href={appData.href}
-            target="_blank"
+            target={appData.live ? '_blank' : '_self'}
             className="w-[80px] h-[80px] rounded-full bg-blue-500 relative"
         >
             <Image
@@ -61,28 +61,28 @@ const apps = {
     sintropStore: {
         image: SintropStoreIcon,
         title: 'Sintrop Store',
-        href: '',
+        href: '/',
         live: false,
         testnet: false,
     },
     sintropChain: {
         image: SintropChainIcon,
         title: 'Sintrop Chain',
-        href: 'https://pay.sintrop.com',
+        href: '/',
         live: false,
         testnet: false,
     },
     regenerationCreditV7: {
         image: RCIcon,
         title: 'Crédito de Regeneração (V7)',
-        href: 'https://app.sintrop.com',
+        href: '/',
         live: false,
         testnet: false,
     },
     sintropPayMainnet: {
         image: SintropPayIcon,
         title: 'Sintrop Pay (Mainnet)',
-        href: 'https://pay.sintrop.com',
+        href: '/',
         live: false,
         testnet: false,
     },
