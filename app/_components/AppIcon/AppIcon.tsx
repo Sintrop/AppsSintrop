@@ -5,6 +5,7 @@ import RCIcon from '../../assets/img/rc.png';
 import SintropPayIcon from '../../assets/img/sintrop-pay.png';
 import SintropChainIcon from '../../assets/img/sintrop-chain.png';
 import SintropStoreIcon from '../../assets/img/sintrop-store.png';
+import TreinamentosIcon from '../../assets/img/icon-treinamentos.png';
 
 interface Props {
     appName: AppName;
@@ -15,7 +16,6 @@ export function AppIcon({ appName }: Props) {
     return (
         <Link
             href={appData.href}
-            target={appData.live ? '_blank' : '_self'}
             className="w-[80px] h-[80px] rounded-full bg-blue-500 relative"
         >
             <Image
@@ -72,18 +72,32 @@ const apps = {
         live: false,
         testnet: false,
     },
+    sequoiaChain: {
+        image: SintropChainIcon,
+        title: 'Sequoia (Testnet)',
+        href: 'https://sequoia.sintrop.com',
+        live: true,
+        testnet: true,
+    },
     regenerationCreditV7: {
         image: RCIcon,
         title: 'Crédito de Regeneração (V7)',
-        href: '/',
-        live: false,
-        testnet: false,
+        href: 'https://v7.sintrop.com',
+        live: true,
+        testnet: true,
     },
     sintropPayMainnet: {
         image: SintropPayIcon,
         title: 'Sintrop Pay (Mainnet)',
         href: '/',
         live: false,
+        testnet: false,
+    },
+    treinamentos: {
+        image: TreinamentosIcon,
+        title: 'Treinamentos',
+        href: 'https://education.sintrop.com',
+        live: true,
         testnet: false,
     },
 }

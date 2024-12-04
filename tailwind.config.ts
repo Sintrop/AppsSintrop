@@ -11,6 +11,9 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        container:{
+          primary: "#03364B"
+        }
       },
       backgroundImage:{
         "florest-1": "url('../app/assets/img/bg-1.png')"
