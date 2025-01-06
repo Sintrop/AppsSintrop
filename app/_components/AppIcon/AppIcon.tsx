@@ -16,12 +16,12 @@ export function AppIcon({ appName }: Props) {
     return (
         <Link
             href={appData.href}
-            className="w-[80px] h-[80px] rounded-full bg-blue-500 relative"
+            className="w-[30%] h-[80px] flex flex-col items-center mb-10 relative"
         >
             <Image
                 src={appData.image}
                 alt='Icone do app'
-                className="w-full h-full object-contain mb-1"
+                className="w-16 h-16 object-contain rounded-full mb-1"
                 width={300}
                 height={300}
             />
@@ -98,6 +98,13 @@ const apps = {
         title: 'Treinamentos',
         href: 'https://education.sintrop.com',
         live: true,
+        testnet: false,
+    },
+    market: {
+        image: SintropStoreIcon,
+        title: 'Mercado',
+        href: 'https://v8.sintrop.com',
+        live: false,
         testnet: false,
     },
 }
